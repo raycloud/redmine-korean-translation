@@ -1,0 +1,1041 @@
+# Korean translation by Jiwoon Kim
+#   https://github.com/raycloud/redmine-korean-translation
+# originally by Kihyun Yoon (ddumbugie@gmail.com),http://plenum.textcube.com
+ko:
+  # Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
+  direction: ltr
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%Y/%m/%d"
+      short: "%m/%d"
+      long: "%Y년 %m월 %d일 (%a)"
+
+    day_names: [일요일, 월요일, 화요일, 수요일, 목요일, 금요일, 토요일]
+    abbr_day_names: [일, 월, 화, 수, 목, 금, 토]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, 1월, 2월, 3월, 4월, 5월, 6월, 7월, 8월, 9월, 10월, 11월, 12월]
+    abbr_month_names: [~, 1월, 2월, 3월, 4월, 5월, 6월, 7월, 8월, 9월, 10월, 11월, 12월]
+    # Used in date_select and datime_select.
+    order:
+      - :year
+      - :month
+      - :day
+
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M"
+      time: "%H:%M"
+      short: "%m/%d %H:%M"
+      long: "%Y년 %m월 %d일 %H:%M"
+    am: "오전"
+    pm: "오후"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "30초"
+      less_than_x_seconds:
+        one:   "약 1초"
+        other: "약 %{count}초"
+      x_seconds:
+        one:   "1초"
+        other: "%{count}초"
+      less_than_x_minutes:
+        one:   "약 1분"
+        other: "약 %{count}분"
+      x_minutes:
+        one:   "1분"
+        other: "%{count}분"
+      about_x_hours:
+        one:   "약 1시간"
+        other: "약 %{count}시간"
+      x_hours:
+        one:   "1시간"
+        other: "%{count}시간"
+      x_days:
+        one:   "하루"
+        other: "%{count}일"
+      about_x_months:
+        one:   "약 한달"
+        other: "약 %{count}달"
+      x_months:
+        one:   "한달"
+        other: "%{count}달"
+      about_x_years:
+        one:   "약 일년"
+        other: "약 %{count}년"
+      over_x_years:
+        one:   "일년 더"
+        other: "%{count}년 더"
+      almost_x_years:
+        one:   "거의 일년"
+        other: "거의 %{count}년"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
+# Used in array.to_sentence.
+  support:
+    array:
+      sentence_connector: "그리고"
+      skip_last_comma: false
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "%{model} - 오류가 발생해 저장하지 못했습니다"
+          other:  "%{model} - %{count}개의 오류가 발생해 저장하지 못했습니다"
+      messages:
+        inclusion: "- 목록에 포함되어 있지 않습니다"
+        exclusion: "- 사용할 수 없습니다"
+        invalid: "- 유효하지 않습니다"
+        confirmation: "- 일치하지 않았습니다"
+        accepted: "- 수락하여야 합니다"
+        empty: "- 비어 있습니다"
+        blank: "- 비어 있습니다"
+        too_long: "- 길이가 %{count}글자 이하여야 합니다"
+        too_short: "- 길이가 %{count}글자 이상이여야 합니다"
+        wrong_length: "- 길이가 %{count}글자여야 합니다"
+        taken: "- 이미 추가 되었습니다"
+        not_a_number: "- 숫자만 사용할 수 있습니다"
+        not_a_date: "- 날짜만 사용할 수 있습니다"
+        greater_than: "- %{count}보다 커야 합니다"
+        greater_than_or_equal_to: "- %{count}보다 크거나 같아야 합니다"
+        equal_to: "- %{count}와(과) 같아야 합니다"
+        less_than: "- %{count}보다 작아야 합니다"
+        less_than_or_equal_to: "- %{count}와(과) 같거나 작아야 합니다: "
+        odd: "- 홀수여야 합니다"
+        even: "- 짝수여야 합니다"
+        greater_than_start_date: "- 시작날짜 이후여야 합니다"
+        not_same_project: "- 현재 프로젝트에 속해 있지 않습니다"
+        circular_dependency: "이 관계는 순환 의존관계를 만들 수 있습니다"
+        cant_link_an_issue_with_a_descendant: "하위 이슈에 연결될 수 없습니다"
+
+  actionview_instancetag_blank_option: 선택하세요
+
+  general_text_No: '아니오'
+  general_text_Yes: '예'
+  general_text_no: '아니오'
+  general_text_yes: '예'
+  general_lang_name: 'Korean (한국어)'
+  general_csv_separator: ','
+  general_csv_decimal_separator: '.'
+  general_csv_encoding: CP949
+  general_pdf_encoding: CP949
+  general_first_day_of_week: '7'
+
+  notice_account_updated: 계정 정보가 업데이트 되었습니다.
+  notice_account_invalid_creditentials: 계정 또는 비밀번호가 올바르지 않습니다.
+  notice_account_password_updated: 비밀번호가 변경되었습니다.
+  notice_account_wrong_password: 잘못된 비밀번호.
+  notice_account_register_done: 계정이 등록되었습니다. 계정을 활성화하려면 수신된 메일의 링크를 클릭해주세요.
+  notice_account_unknown_email: 알수없는 사용자.
+  notice_can_t_change_password: 이 계정은 외부 인증을 이용기 때문에 비밀번호를 변경할 수 없습니다.
+  notice_account_lost_email_sent: 비밀번호 변경에 대한 메일이 발송되었습니다.
+  notice_account_activated: 계정이 활성화 되어 로그인 하실 수 있습니다.
+  notice_successful_create: 추가되었습니다.
+  notice_successful_update: 업데이트 되었습니다.
+  notice_successful_delete: 삭제되었습니다.
+  notice_successful_connection: 연결되었습니다.
+  notice_file_not_found: 요청하신 페이지를 찾을 수 없습니다.
+  notice_locking_conflict: 다른 사용자에 의해 데이터가 변경 되었습니다.
+  notice_not_authorized: 이 페이지에 접근할 권한이 없습니다.
+  notice_not_authorized_archived_project: 프로젝트가 잠겨있어 접근할 수 없습니다.
+  notice_email_sent: "%{value}님에게 메일이 발송되었습니다."
+  notice_email_error: "메일을 전송하는 과정에 오류가 발생했습니다 (%{value})"
+  notice_feeds_access_key_reseted: RSS 접근키가 초기화 되었습니다.
+  notice_api_access_key_reseted: API 접근키가 초기화 되었습니다.
+  notice_failed_to_save_issues: "선택된 이슈 %{total}건중 %{count}건을 저장하지 못했습니다: %{ids}"
+  notice_failed_to_save_time_entries: "선택된 시간기록 %{total}건중 %{count}건을 저장하지 못했습니다: %{ids}"
+  notice_failed_to_save_members: "사용자를 저장하지 못했습니다: %{errors}"
+  notice_no_issue_selected: "이슈가 선택되지 않았습니다. 수정할 이슈를 선택하세요."
+  notice_account_pending: "계정이 생성 되었으며 관리자의 승인을 대기중입니다."
+  notice_default_data_loaded: 기본값을 성공적으로 불러왔습니다.
+  notice_unable_delete_version: 버전을 삭제할 수 없습니다.
+  notice_unable_delete_time_entry: 시간 기록을 삭제할 수 없습니다.
+  notice_issue_done_ratios_updated: 이슈 진행율이 업데이트 되었습니다.
+  notice_gantt_chart_truncated: "차트에 표시할 수 있는 최대 항목수(%{max})를 초과하여 더이상 표시되지 않습니다."
+  notice_issue_successful_create: "%{id} 이슈가 추가되었습니다."
+  notice_issue_update_conflict: "이슈가 수정 도중에 다른 사용자에 의해 변경 되었습니다."
+  notice_account_deleted: "계정이 영구적으로 삭제됩니다."
+
+  error_can_t_load_default_data: "기본값을 불러오지 못했습니다: %{value}"
+  error_scm_not_found: 항목이나 리비젼이 저장소에 존재하지 않습니다.
+  error_scm_command_failed: "저장소에 접근하는 도중에 오류가 발생했습니다: %{value}"
+  error_scm_annotate: "항목이 없거나 표시할 수 없습니다."
+  error_scm_annotate_big_text_file: "텍스트 파일의 크기가 최대 크기를 초과해서 표시할 수 없습니다."
+  error_issue_not_found_in_project: '존재하지 않는 이슈이거나 이 프로젝트의 이슈가 아닙니다.'
+  error_no_tracker_in_project: 사용할 수 있는 이슈 타입이 없습니다. 프로젝트 설정을 확인하세요.
+  error_no_default_issue_status: '기본 이슈 상태가 정해져 있지 않습니다. 설정을 확인하세요. (주 메뉴의 "관리 -> 이슈 상태")'
+  error_can_not_delete_custom_field: 사용자 정의 필드를 삭제할 수 없습니다.
+  error_can_not_delete_tracker: 이슈가 존재하여 삭제할 수 없습니다.
+  error_can_not_remove_role: 사용중인 역할이기 때문에 삭제할 수 없습니다.
+  error_can_not_reopen_issue_on_closed_version: 이슈가 닫힌 버전에 포함되어 있어 수정할 수 없습니다.
+  error_can_not_archive_project: 이 프로젝트를 잠글 수 없습니다.
+  error_issue_done_ratios_not_updated: 이슈 진행율이 업데이트 되지 않았습니다.
+  error_workflow_copy_source: 원본 타입이나 역할을 선택하세요.
+  error_workflow_copy_target: 대상 타입과 역할을 선택하세요.
+  error_unable_delete_issue_status: 이슈상태를 지울 수 없습니다.
+  error_unable_to_connect: "연결할 수 없습니다 (%{value})"
+  error_attachment_too_big: "업로드 가능한 용량(최대 %{max_size})을 초과하여 업로드 할 수 없습니다."
+  error_session_expired: "세션이 만료되었습니다. 다시 로그인 해야 합니다."
+  warning_attachments_not_saved: "%{count}개 파일이 저장에 실패했습니다."
+
+  mail_subject_lost_password: "%{value} 비밀번호"
+  mail_body_lost_password: '비밀번호를 변경하려면 다음 링크를 클릭하세요:'
+  mail_subject_register: "%{value} 계정 활성화"
+  mail_body_register: '계정을 활성화하려면 다음 링크를 클릭하세요:'
+  mail_body_account_information_external: "%{value} 계정으로 로그인할 수 있습니다."
+  mail_body_account_information: 계정 정보
+  mail_subject_account_activation_request: "%{value} 계정 활성화 요청"
+  mail_body_account_activation_request: "신규 사용자 (%{value})님이 등록되어 승인을 기다리고 있습니다:"
+  mail_subject_reminder: "이슈 %{count}건이 %{days}일 남았습니다"
+  mail_body_reminder: "담당하는 이슈중 %{days}일 남은 이슈 %{count}건:"
+  mail_subject_wiki_content_added: "'%{id}' 위키페이지가 추가되었습니다"
+  mail_body_wiki_content_added: "%{author}님이 '%{id}' 위키페이지를 추가했습니다."
+  mail_subject_wiki_content_updated: "'%{id}' 위키페이지가 수정되었습니다"
+  mail_body_wiki_content_updated: "%{author}님이 '%{id}' 위키페이지를 수정했습니다."
+
+  gui_validation_error: 오류
+  gui_validation_error_plural: "%{count}개 오류"
+
+  field_name: 이름
+  field_description: 설명
+  field_summary: 요약
+  field_is_required: 필수
+  field_firstname: 이름
+  field_lastname: 성
+  field_mail: 이메일
+  field_filename: 파일
+  field_filesize: 크기
+  field_downloads: 다운로드
+  field_author: 작성자
+  field_created_on: 등록일
+  field_updated_on: 수정일
+  field_field_format: 형식
+  field_is_for_all: 모든 프로젝트
+  field_possible_values: 가능한 값들
+  field_regexp: 정규식
+  field_min_length: 최소 길이
+  field_max_length: 최대 길이
+  field_value: 값
+  field_category: 분류
+  field_title: 제목
+  field_project: 프로젝트
+  field_issue: 이슈
+  field_status: 상태
+  field_notes: 설명
+  field_is_closed: 이슈 닫기
+  field_is_default: 기본값
+  field_tracker: 타입
+  field_subject: 제목
+  field_due_date: 마감일
+  field_assigned_to: 담당자
+  field_priority: 우선순위
+  field_fixed_version: 목표버전
+  field_user: 사용자
+  field_principal: 신원
+  field_role: 역할
+  field_homepage: 홈페이지
+  field_is_public: 공개
+  field_parent: 상위 프로젝트
+  field_is_in_roadmap: 로드맵에 표시
+  field_login: 아이디
+  field_mail_notification: 알림
+  field_admin: 관리자
+  field_last_login_on: 최근 로그인
+  field_language: 언어
+  field_effective_date: 날짜
+  field_password: 비밀번호
+  field_new_password: 새로운 비밀번호
+  field_password_confirmation: 비밀번호 확인
+  field_version: 버전
+  field_type: 방식
+  field_host: 호스트
+  field_port: 포트
+  field_account: 계정
+  field_base_dn: Base DN
+  field_attr_login: 아이디 속성
+  field_attr_firstname: 이름 속성
+  field_attr_lastname: 성 속성
+  field_attr_mail: 메일 속성
+  field_onthefly: 자동 사용자 등록
+  field_start_date: 시작일
+  field_done_ratio: "진행율"
+  field_auth_source: 인증 공급자
+  field_hide_mail: 메일주소 숨기기
+  field_comments: 댓글
+  field_url: URL
+  field_start_page: 시작 페이지
+  field_subproject: 하위 프로젝트
+  field_hours: 시간
+  field_activity: 활동
+  field_spent_on: 작업일
+  field_identifier: 식별자
+  field_is_filter: 검색조건으로 사용
+  field_issue_to: 관련된 이슈
+  field_delay: 지연
+  field_assignable: 이슈 담당 가능
+  field_redirect_existing_links: 기존 링크 유지
+  field_estimated_hours: 예상시간
+  field_column_names: 항목
+  field_time_entries: 시간기록
+  field_time_zone: 시간대
+  field_searchable: 검색가능
+  field_default_value: 기본값
+  field_comments_sorting: 댓글 정렬
+  field_parent_title: 상위 페이지
+  field_editable: 수정가능
+  field_watcher: 모니터링
+  field_identity_url: OpenID URL
+  field_content: 내용
+  field_group_by: 결과기준
+  field_sharing: 공유
+  field_parent_issue: 상위이슈
+  field_member_of_group: 사용자 그룹
+  field_assigned_to_role: 사용자 역할
+  field_text: 텍스트 영역
+  field_visible: 보이기
+  field_warn_on_leaving_unsaved: 변경된 내용을 저장하지 않고 페이지에서 벗어날때 경고
+  field_issues_visibility: 이슈 보기
+  field_is_private: 비공개
+  field_commit_logs_encoding: 커밋 기록 인코딩
+  field_scm_path_encoding: 경로 인코딩
+  field_path_to_repository: 저장소 경로
+  field_root_directory: 루트 디렉토리
+  field_cvsroot: CVSROOT
+  field_cvs_module: 모듈
+  field_repository_is_default: 주 저장소
+  field_multiple: 여러 값들
+  field_ldap_filter: LDAP 필터
+
+  setting_app_title: Redmine 제목
+  setting_app_subtitle: Redmine 부제목
+  setting_welcome_text: 환영 메시지
+  setting_default_language: 기본 언어
+  setting_login_required: 인증이 필요함
+  setting_self_registration: 사용자 등록
+  setting_attachment_max_size: 첨부파일 최대 크기
+  setting_issues_export_limit: 이슈 내보내기 제한
+  setting_mail_from: 발신 메일주소
+  setting_bcc_recipients: 숨은참조 (BCC)
+  setting_plain_text_mail: 텍스트만 (HTML 없이)
+  setting_host_name: 호스트명과 경로
+  setting_text_formatting: 본문 형식
+  setting_wiki_compression: 위키 이력 압축
+  setting_feeds_limit: Atom 피드에 표시할 항목수
+  setting_default_projects_public: 새로운 프로젝트를 공개로 설정
+  setting_autofetch_changesets: 자동으로 커밋 처리
+  setting_sys_api_enabled: 저장소 관리에 WS를 사용
+  setting_commit_ref_keywords: 이슈 참조에 사용할 키워드들
+  setting_commit_fix_keywords: 이슈 업데이트에 사용할 키워드들
+  setting_autologin: 자동 로그인
+  setting_date_format: 날짜형식
+  setting_time_format: 시간형식
+  setting_cross_project_issue_relations: 관련된 이슈에 다른 프로젝트의 이슈를 사용
+  setting_issue_list_default_columns: 이슈 목록에 표시할 항목
+  setting_repositories_encodings: 첨부파일과 저장소 인코딩
+  setting_emails_header: 머리말
+  setting_emails_footer: 꼬리말
+  setting_protocol: 프로토콜
+  setting_per_page_options: 한 페이지당 표시할 줄수 옵션
+  setting_user_format: 사용자 표시 형식
+  setting_activity_days_default: 기본으로 표시할 프로젝트 활동 기간
+  setting_display_subprojects_issues: 하위 프로젝트의 이슈를 함께 표시
+  setting_enabled_scm: 사용할 SCM
+  setting_mail_handler_body_delimiters: 메일 본문 자르는 기준
+  setting_mail_handler_api_enabled: 수신메일에 WS를 허용
+  setting_mail_handler_api_key: API 키
+  setting_sequential_project_identifiers: 프로젝트 식별자를 순차적으로 생성
+  setting_gravatar_enabled: 사용자 아이콘에 그라바타 사용
+  setting_gravatar_default: 기본 그라바타 이미지
+  setting_diff_max_lines_displayed: 차이점(diff) 보기에 표시할 최대 줄수
+  setting_file_max_size_displayed: 바로 보여줄 텍스트파일의 최대 크기
+  setting_repository_log_display_limit: 저장소 보기에 표시할 최대 리비전 개수
+  setting_openid: OpenID 로그인과 등록 허용
+  setting_password_min_length: 최소 암호 길이
+  setting_new_project_user_role_id: 프로젝트를 만든 사용자의 역할
+  setting_default_projects_modules: 새로운 프로젝트에서 기본적으로 사용할 모듈
+  setting_issue_done_ratio: 이슈 업데이트시 진행율 계산
+  setting_issue_done_ratio_issue_field: 직접 입력
+  setting_issue_done_ratio_issue_status: 이슈 상태에 따름 (설정필요)
+  setting_start_of_week: 달력 시작 요일
+  setting_rest_api_enabled: REST API 활성화
+  setting_cache_formatted_text: 텍스트 Cache 사용
+  setting_default_notification_option: 기본 알림 옵션
+  setting_commit_logtime_enabled: 커밋 시점에 소요시간 기록
+  setting_commit_logtime_activity_id: 기록된 시간에 적용할 활동
+  setting_gantt_items_limit: 간트 차트에 표시할 최대 항목 개수
+  setting_issue_group_assignment: 그룹에 이슈 담당 허용
+  setting_default_issue_start_date_to_creation_date: 새로운 이슈의 시작일에 현재 날짜를 사용
+  setting_commit_cross_project_ref: 다른 프로젝트의 이슈도 참조와 업데이트 가능
+  setting_unsubscribe: 사용자가 직접 탈퇴가능
+  setting_session_lifetime: 세션 유지시간
+  setting_session_timeout: 세션 타임아웃
+
+  permission_add_project: 프로젝트 추가
+  permission_add_subprojects: 하위 프로젝트 추가
+  permission_edit_project: 프로젝트 수정
+  permission_select_project_modules: 프로젝트 모듈 선택
+  permission_manage_members: 멤버 관리
+  permission_manage_project_activities: 프로젝트 활동 내역 관리
+  permission_manage_versions: 버전 관리
+  permission_manage_categories: 분류 관리
+  permission_view_issues: 이슈 보기
+  permission_add_issues: 이슈 작성
+  permission_edit_issues: 이슈 수정
+  permission_manage_issue_relations: 이슈 관계 관리
+  permission_set_issues_private: 이슈를 공개나 비공개로 설정
+  permission_set_own_issues_private: 자신의 이슈를 공개나 비공개로 설정
+  permission_add_issue_notes: 설명 추가
+  permission_edit_issue_notes: 설명 편집
+  permission_edit_own_issue_notes: 내 설명 편집
+  permission_move_issues: 이슈 이동
+  permission_delete_issues: 이슈 삭제
+  permission_manage_public_queries: 공용 검색양식 관리
+  permission_save_queries: 검색양식 저장
+  permission_view_gantt: 간트 차트 보기
+  permission_view_calendar: 캘린더 보기
+  permission_view_issue_watchers: 모니터링 보기
+  permission_add_issue_watchers: 모니터링 추가
+  permission_delete_issue_watchers: 모니터링 삭제
+  permission_log_time: 소요시간 기록
+  permission_view_time_entries: 시간기록 보기
+  permission_edit_time_entries: 시간기록 수정
+  permission_edit_own_time_entries: 내 시간기록 수정
+  permission_manage_news: 뉴스 관리
+  permission_comment_news: 뉴스에 댓글달기
+  permission_manage_documents: 문서 관리
+  permission_view_documents: 문서 보기
+  permission_manage_files: 파일 관리
+  permission_view_files: 파일 보기
+  permission_manage_wiki: 위키 관리
+  permission_rename_wiki_pages: 위키페이지 이름 변경
+  permission_delete_wiki_pages: 위치페이지 삭제
+  permission_view_wiki_pages: 위키 보기
+  permission_view_wiki_edits: 위키 기록 보기
+  permission_edit_wiki_pages: 위키페이지 편집
+  permission_delete_wiki_pages_attachments: 첨부파일 삭제
+  permission_protect_wiki_pages: 프로젝트 위키페이지
+  permission_manage_repository: 저장소 관리
+  permission_browse_repository: 저장소 둘러보기
+  permission_view_changesets: 체인지셋 보기
+  permission_commit_access: 커밋기록 보기
+  permission_manage_boards: 게시판 관리
+  permission_view_messages: 메시지 보기
+  permission_add_messages: 메시지 추가
+  permission_edit_messages: 메시지 편집
+  permission_edit_own_messages: 나의 메시지 편집
+  permission_delete_messages: 메시지 삭제
+  permission_delete_own_messages: 나의 메시지 삭제
+  permission_export_wiki_pages: 위키페이지 내보내기
+  permission_manage_subtasks: 하위 이슈 관리
+  permission_manage_related_issues: 관련된 이슈 관리
+
+  project_module_issue_tracking: 이슈 추적
+  project_module_time_tracking: 시간 추적
+  project_module_news: 뉴스
+  project_module_documents: 문서
+  project_module_files: 파일
+  project_module_wiki: 위키
+  project_module_repository: 저장소
+  project_module_boards: 게시판
+  project_module_calendar: 캘린더
+  project_module_gantt: 간트 차트
+
+  label_user: 사용자
+  label_user_plural: 사용자
+  label_user_new: 사용자 추가
+  label_user_anonymous: 이름없음
+  label_project: 프로젝트
+  label_project_new: 프로젝트 추가
+  label_project_plural: 프로젝트
+  label_x_projects:
+    zero:  프로젝트 없음
+    one:   프로젝트 한개
+    other: "프로젝트 %{count}개"
+  label_project_all: 모든 프로젝트
+  label_project_latest: 최근 프로젝트
+  label_issue: 이슈
+  label_issue_new: 이슈 작성
+  label_issue_plural: 이슈
+  label_issue_view_all: 모든 이슈 보기
+  label_issues_by: "%{value}별 이슈"
+  label_issue_added: 이슈가 추가됨
+  label_issue_updated: 이슈가 업데이트됨
+  label_issue_note_added: 설명이 추가됨
+  label_issue_status_updated: 상태가 변경됨
+  label_issue_priority_updated: 순위가 변경됨
+  label_document: 문서
+  label_document_new: 문서 작성
+  label_document_plural: 문서
+  label_document_added: 문서가 추가됨
+  label_role: 역할
+  label_role_plural: 역할
+  label_role_new: 역할 추가
+  label_role_and_permissions: 역할 및 권한
+  label_role_anonymous: 익명
+  label_role_non_member: 일반
+  label_member: 사용자
+  label_member_new: 사용자 등록
+  label_member_plural: 사용자
+  label_tracker: 이슈 타입
+  label_tracker_plural: 이슈 타입
+  label_tracker_new: 이슈타입 추가
+  label_workflow: 업무흐름
+  label_issue_status: 이슈 상태
+  label_issue_status_plural: 이슈 상태
+  label_issue_status_new: 이슈상태 추가
+  label_issue_category: 이슈 분류
+  label_issue_category_plural: 이슈 분류
+  label_issue_category_new: 이슈분류 추가
+  label_custom_field: 사용자 정의 항목
+  label_custom_field_plural: 사용자 정의 항목
+  label_custom_field_new: 사용자 정의 항목 추가
+  label_enumerations: 열거형 항목
+  label_enumeration_new: 항목 추가
+  label_information: 정보
+  label_information_plural: 정보
+  label_please_login: 로그인 하세요.
+  label_register: 등록
+  label_login_with_open_id_option: 또는 OpenID로 로그인
+  label_password_lost: 비밀번호 찾기
+  label_home: 초기화면
+  label_my_page: 내 페이지
+  label_my_account: 내 계정
+  label_my_projects: 내 프로젝트
+  label_my_page_block: 사용 가능한 항목
+  label_administration: 관리
+  label_login: 로그인
+  label_logout: 로그아웃
+  label_help: 도움말
+  label_reported_issues: 작성한 이슈
+  label_assigned_to_me_issues: 내가 맡은 이슈
+  label_last_login: 마지막 접속
+  label_registered_on: 등록일
+  label_activity: 활동
+  label_overall_activity: 전체 활동
+  label_user_activity: "%{value}님의 활동"
+  label_new: 새로 만들기
+  label_logged_as: 사용자
+  label_environment: 환경
+  label_authentication: 인증
+  label_auth_source: 인증 공급자
+  label_auth_source_new: 인증 공급자 추가
+  label_auth_source_plural: 인증 공급자
+  label_subproject_plural: 하위 프로젝트
+  label_subproject_new: 하위 프로젝트 추가
+  label_and_its_subprojects: "%{value}와(과) 하위 프로젝트들"
+  label_min_max_length: 최소 - 최대 길이
+  label_list: 목록
+  label_date: 날짜
+  label_integer: 정수
+  label_float: 실수
+  label_boolean: 불린
+  label_string: 문자열
+  label_text: 텍스트
+  label_attribute: 속성
+  label_attribute_plural: 속성
+  label_download: "%{count}회 다운로드"
+  label_download_plural: "%{count}회 다운로드"
+  label_no_data: 표시할 데이터가 없습니다.
+  label_change_status: 상태 변경
+  label_history: 이력
+  label_attachment: 파일
+  label_attachment_new: 파일추가
+  label_attachment_delete: 파일삭제
+  label_attachment_plural: 파일
+  label_file_added: 파일이 추가됨
+  label_report: 보고서
+  label_report_plural: 보고서
+  label_news: 뉴스
+  label_news_new: 뉴스 작성
+  label_news_plural: 뉴스
+  label_news_latest: 최근 뉴스
+  label_news_view_all: 모든 뉴스
+  label_news_added: 뉴스가 추가됨
+  label_news_comment_added: 뉴스에 댓글 달림
+  label_settings: 설정
+  label_overview: 개요
+  label_version: 버전
+  label_version_new: 버전 추가
+  label_version_plural: 버전
+  label_close_versions: 완료된 버전 닫기
+  label_confirmation: 확인
+  label_export_to: '내보내기:'
+  label_read: 읽기...
+  label_public_projects: 공개 프로젝트
+  label_open_issues: 진행중
+  label_open_issues_plural: 진행중
+  label_closed_issues: 닫힘
+  label_closed_issues_plural: 닫힘
+  label_x_open_issues_abbr_on_total:
+    zero:  0건 진행중 / %{total}건
+    one:   1건 진행중 / %{total}건
+    other: "%{count}건 진행중 / %{total}건"
+  label_x_open_issues_abbr:
+    zero:  0건 진행중
+    one:   1건 진행중
+    other: "%{count}건 진행중"
+  label_x_closed_issues_abbr:
+    zero:  0건 닫힘
+    one:   1건 닫힘
+    other: "%{count}건 닫힘"
+  label_x_issues:
+    zero:  0건
+    one:   1건
+    other: "%{count}건"
+  label_total: 합계
+  label_permissions: 권한
+  label_current_status: 이전 이슈 상태
+  label_new_statuses_allowed: 허용할 다음 이슈 상태
+  label_all: 전체
+  label_none: 없음
+  label_nobody: 미지정
+  label_next: 다음
+  label_previous: 이전
+  label_used_by: 사용중
+  label_details: 자세히
+  label_add_note: 이슈설명 추가
+  label_per_page: 페이지별
+  label_calendar: 캘린더
+  label_months_from: 개월 / 기준일
+  label_gantt: 간트 차트
+  label_internal: 내부
+  label_last_changes: "최근 %{count}건의 변경사항"
+  label_change_view_all: 모든 변경 내역 보기
+  label_personalize_page: 페이지 구성하기
+  label_comment: 댓글
+  label_comment_plural: 댓글
+  label_x_comments:
+    zero: 댓글 없음
+    one: 댓글 한건
+    other: "댓글 %{count}건"
+  label_comment_add: 댓글 추가
+  label_comment_added: 댓글이 추가되었습니다.
+  label_comment_delete: 댓글 삭제
+  label_query: 검색양식
+  label_query_plural: 검색양식
+  label_query_new: 검색양식 추가
+  label_my_queries: 사용자 검색양식
+  label_filter_add: 필터 추가
+  label_filter_plural: 필터
+  label_equals: '='
+  label_not_equals: '≠'
+  label_in_less_than: 처음부터 x일이후
+  label_in_more_than: 오늘부터 x일이후
+  label_greater_or_equal: '≥'
+  label_less_or_equal: '≤'
+  label_between: x일부터 x일까지
+  label_in: x째 날
+  label_today: 오늘
+  label_all_time: 전체
+  label_yesterday: 어제
+  label_this_week: 이번 주
+  label_last_week: 지난 주
+  label_last_n_days: "최근 %{count} 일"
+  label_this_month: 이번 달
+  label_last_month: 지난 달
+  label_this_year: 올해
+  label_date_range: 기간
+  label_less_than_ago: x일전부터 전체
+  label_more_than_ago: 처음부터 x일 이전
+  label_ago: 이전 x째 날
+  label_contains: 포함
+  label_not_contains: 포함안함
+  label_day_plural: 일
+  label_repository: 저장소
+  label_repository_new: 저장소 추가
+  label_repository_plural: 저장소
+  label_browse: 저장소 탐색
+  label_modification: "%{count} 변경"
+  label_modification_plural: "%{count} 변경"
+  label_branch: 브랜치(분기)
+  label_tag: 태그(표지)
+  label_revision: 리비전
+  label_revision_plural: 리비전
+  label_revision_id: 리비전 %{value}
+  label_associated_revisions: 관련된 리비전
+  label_added: 추가됨
+  label_modified: 변경됨
+  label_copied: 복사됨
+  label_renamed: 이름변경
+  label_deleted: 삭제됨
+  label_latest_revision: 최근 리비전
+  label_latest_revision_plural: 최근 리비전
+  label_view_revisions: 리비전 보기
+  label_view_all_revisions: 모든 리비전 표시
+  label_max_size: 최대 크기
+  label_sort_highest: 맨 위로
+  label_sort_higher: 위로
+  label_sort_lower: 아래로
+  label_sort_lowest: 맨 아래로
+  label_roadmap: 로드맵
+  label_roadmap_due_in: "기한 %{value}"
+  label_roadmap_overdue: "%{value} 지연"
+  label_roadmap_no_issues: 이 버전에 해당하는 이슈 없음
+  label_search: 검색
+  label_result_plural: 결과
+  label_all_words: 모든 단어
+  label_wiki: 위키
+  label_wiki_edit: 위키 편집
+  label_wiki_edit_plural: 위키 편집
+  label_wiki_page: 위키페이지
+  label_wiki_page_plural: 위키페이지
+  label_index_by_title: 제목별 색인
+  label_index_by_date: 날짜별 색인
+  label_current_version: 현재 버전
+  label_preview: 미리보기
+  label_feed_plural: 피드(Feeds)
+  label_changes_details: 모든 상세 변경 내역
+  label_issue_tracking: 이슈 추적
+  label_spent_time: 소요시간
+  label_overall_spent_time: 총 소요시간
+  label_f_hour: "%{value} 시간"
+  label_f_hour_plural: "%{value} 시간"
+  label_time_tracking: 시간 추적
+  label_change_plural: 변경사항들
+  label_statistics: 통계
+  label_commits_per_month: 월별 커밋 내역
+  label_commits_per_author: 작성자별 커밋 내역
+  label_diff: diff
+  label_view_diff: 차이점 보기
+  label_diff_inline: 한꺼번에 보기
+  label_diff_side_by_side: 나누어 보기
+  label_options: 보기 옵션
+  label_copy_workflow_from: 업무흐름 복사
+  label_permissions_report: 한번에 보기
+  label_watched_issues: 모니터링 중인 이슈
+  label_related_issues: 관련된 이슈
+  label_applied_status: 적용될 상태
+  label_loading: 로딩중...
+  label_relation_new: 연결 추가
+  label_relation_delete: 연결 끊기
+  label_relates_to: 다음 이슈와 관련됨
+  label_duplicates: 다음 이슈에서 상태 변경
+  label_duplicated_by: 다음 이슈의 상태 변경
+  label_blocks: 다음 이슈의 상태 변경 제한
+  label_blocked_by: 다음 이슈에서 상태 변경 제한
+  label_precedes: 현재 이슈 마감후 다음 이슈 진행
+  label_follows: 다음 이슈 마감후 현재 이슈 진행
+  label_end_to_start: 끝에서 시작
+  label_end_to_end: 끝에서 끝
+  label_start_to_start: 시작에서 시작
+  label_start_to_end: 시작에서 끝
+  label_stay_logged_in: 로그인 유지
+  label_disabled: 사용안함
+  label_show_completed_versions: 완료된 버전 보기
+  label_me: 나
+  label_board: 게시판
+  label_board_new: 게시판 추가
+  label_board_plural: 게시판
+  label_board_locked: 잠금
+  label_board_sticky: 공지
+  label_topic_plural: 주제
+  label_message_plural: 글
+  label_message_last: 마지막 글
+  label_message_new: 글쓰기
+  label_message_posted: 글이 추가됨
+  label_reply_plural: 댓글
+  label_send_information: 사용자에게 계정정보를 보내기
+  label_year: 년
+  label_month: 월
+  label_week: 주
+  label_date_from: '기간:'
+  label_date_to: ' ~ '
+  label_language_based: 언어설정에 따름
+  label_sort_by: "정렬: %{value}"
+  label_send_test_email: 테스트 메일 보내기
+  label_feeds_access_key: RSS 접근키
+  label_missing_feeds_access_key: RSS 접근키가 없습니다
+  label_feeds_access_key_created_on: "RSS 접근키가 %{value} 전에 생성되었습니다"
+  label_module_plural: 모듈
+  label_added_time_by: "%{author}님이 %{age}전에 추가"
+  label_updated_time_by: "%{author}님이 %{age}전에 업데이트"
+  label_updated_time: "%{value}전에 수정됨"
+  label_jump_to_a_project: 프로젝트 바로가기
+  label_file_plural: 파일
+  label_changeset_plural: 체인지셋
+  label_default_columns: 기본 항목
+  label_no_change_option: (수정 안함)
+  label_bulk_edit_selected_issues: 선택한 이슈 한꺼번에 수정하기
+  label_bulk_edit_selected_time_entries: 시간 기록 한꺼번에 수정하기
+  label_theme: 테마
+  label_default: 기본
+  label_search_titles_only: 제목에서만 찾기
+  label_user_mail_option_all: "나의 모든 프로젝트에 대한 활동"
+  label_user_mail_option_selected: "선택한 프로젝트에 대한 활동..."
+  label_user_mail_option_none: 알림 없음
+  label_user_mail_option_only_my_events: 나와 관련있거나 모니터링중인것에 대한 활동
+  label_user_mail_option_only_assigned: 내가 담당하는것에 대한 활동
+  label_user_mail_option_only_owner: 내가 작성한것에 대한 활동
+  label_user_mail_no_self_notified: "나의 활동에 대해서는 알림을 받지 않기"
+  label_registration_activation_by_email: 메일로 계정 활성화
+  label_registration_manual_activation: 수동 계정 활성화
+  label_registration_automatic_activation: 자동 계정 활성화
+  label_display_per_page: "페이지당 줄수: %{value}"
+  label_age: 마지막 수정일
+  label_change_properties: 속성 변경
+  label_general: 일반
+  label_more: 더 보기
+  label_scm: SCM
+  label_plugins: 플러그인
+  label_ldap_authentication: LDAP 인증
+  label_downloads_abbr: 다운횟수
+  label_optional_description: 설명
+  label_add_another_file: 다른 파일 추가
+  label_preferences: 설정
+  label_chronological_order: 최신 순으로 정렬
+  label_reverse_chronological_order: 오래된 순으로 정렬
+  label_planning: 프로젝트 계획
+  label_incoming_emails: 수신 메일
+  label_generate_key: 키 생성
+  label_issue_watchers: 이슈 모니터링
+  label_example: 예
+  label_display: 표시방식
+  label_sort: 정렬
+  label_ascending: 오름차순
+  label_descending: 내림차순
+  label_date_from_to: "%{start}부터 %{end}까지"
+  label_wiki_content_added: 위키페이지가 추가됨
+  label_wiki_content_updated: 위키페이지가 편집됨
+  label_group: 그룹
+  label_group_plural: 그룹
+  label_group_new: 그룹 추가
+  label_time_entry_plural: 소요시간
+  label_version_sharing_none: 공유없음
+  label_version_sharing_descendants: 하위 프로젝트
+  label_version_sharing_hierarchy: 상위 및 하위 프로젝트
+  label_version_sharing_tree: 최상위 및 모든 하위 프로젝트
+  label_version_sharing_system: 모든 프로젝트
+  label_update_issue_done_ratios: 이슈 진행율 업데이트
+  label_copy_source: 원본
+  label_copy_target: 대상
+  label_copy_same_as_target: 대상과 같음
+  label_display_used_statuses_only: 이 타입에서 사용되는 상태만 보여주기
+  label_api_access_key: API 접근키
+  label_missing_api_access_key: API 접근키가 없습니다.
+  label_api_access_key_created_on: API 접근키가 %{value} 전에 생성되었습니다.
+  label_profile: 사용자 정보
+  label_subtask_plural: 하위 이슈
+  label_project_copy_notifications: 프로젝트가 복사될때 메일로 알림
+  label_principal_search: "사용자 및 그룹 검색:"
+  label_user_search: "사용자 검색:"
+  label_additional_workflow_transitions_for_author: 이슈를 작성한 사용자에게 추가로 허용할 업무흐름
+  label_additional_workflow_transitions_for_assignee: 이슈를 담당하는 사용자에게 추가로 허용할 업무흐름
+  label_issues_visibility_all: 모든 이슈
+  label_issues_visibility_public: 모든 공개 이슈
+  label_issues_visibility_own: 작성했거나 담당하는 이슈
+  label_git_report_last_commit: 파일과 디렉토리의 최근 커밋 보고
+  label_parent_revision: 부모
+  label_child_revision: 자식
+  label_export_options: "%{export_format} 내보내기 옵션"
+  label_copy_attachments: 첨부파일 복사
+  label_item_position: "%{position} / %{count}"
+  label_completed_versions: 완료된 버전
+  label_search_for_watchers: 사용자 검색
+  label_session_expiration: 세션 만료
+
+  button_login: 로그인
+  button_submit: 확인
+  button_save: 저장
+  button_check_all: 전체 선택
+  button_uncheck_all: 전체 해제
+  button_collapse_all: 전체 축소
+  button_expand_all: 전체 확장
+  button_delete: 삭제
+  button_create: 저장
+  button_create_and_continue: 저장하고 계속
+  button_test: 테스트
+  button_edit: 수정
+  button_edit_associated_wikipage: "연관된 위키페이지 수정: %{page_title}"
+  button_add: 추가
+  button_change: 변경
+  button_apply: 적용
+  button_clear: 초기화
+  button_lock: 잠금
+  button_unlock: 잠금해제
+  button_download: 다운로드
+  button_list: 목록
+  button_view: 보기
+  button_move: 옮기기
+  button_move_and_follow: 옮기고 따라가기
+  button_back: 뒤로
+  button_cancel: 취소
+  button_activate: 활성화
+  button_sort: 정렬
+  button_log_time: 소요시간 기록
+  button_rollback: 이 버전으로 되돌리기
+  button_watch: 모니터링
+  button_unwatch: 모니터링 취소
+  button_reply: 댓글 달기
+  button_archive: 잠금
+  button_unarchive: 잠금해제
+  button_reset: 초기화
+  button_rename: 제목변경
+  button_change_password: 비밀번호 변경
+  button_copy: 복사
+  button_copy_and_follow: 복사하고 따라가기
+  button_annotate: 이력과 함께 보기
+  button_update: 업데이트
+  button_configure: 설정
+  button_quote: 댓글 달기
+  button_duplicate: 복제
+  button_show: 보기
+  button_edit_section: 항목 수정
+  button_export: 내보내기
+  button_delete_my_account: 탈퇴하기
+
+  status_active: 활성
+  status_registered: 대기중
+  status_locked: 잠김
+
+  version_status_open: 진행중
+  version_status_locked: 잠김
+  version_status_closed: 닫힘
+
+  field_active: 사용
+
+  text_select_mail_notifications: 메일로 알릴 활동을 선택하세요.
+  text_regexp_info: '예: ^[A-Z0-9]+$'
+  text_min_max_length_info: 0은 제한없음
+  text_project_destroy_confirmation: 프로젝트와 모든 데이터를 삭제하시겠습니까?
+  text_subprojects_destroy_warning: "(%{value}) 하위 프로젝트가 자동으로 삭제됩니다."
+  text_workflow_edit: 수정하려는 업무흐름의 역할과 타입을 선택하세요
+  text_are_you_sure: 계속 진행 하시겠습니까?
+  text_are_you_sure_with_children: "이슈와 모든 하위이슈를 삭제하시겠습니까?"
+  text_journal_changed: "%{label} - %{old} 에서 %{new} (으)로 변경되었습니다."
+  text_journal_changed_no_detail: "%{label} 변경됨"
+  text_journal_set_to: "%{label} - %{value} (으)로 지정되었습니다."
+  text_journal_deleted: "%{label} - 삭제되었습니다. (%{old})"
+  text_journal_added: "%{label} - %{value} 이(가) 추가되었습니다."
+  text_tip_issue_begin_day: 시작한 이슈
+  text_tip_issue_end_day: 마감되는 이슈
+  text_tip_issue_begin_end_day: 하루 이슈
+  text_project_identifier_info: '영문 소문자(a-z) 및 숫자, -, _ 만 사용할 수 있습니다.<br />프로젝트 생성 후엔 식별자를 변경 할 수 없습니다.'
+  text_caracters_maximum: "최대 %{count} 글자"
+  text_caracters_minimum: "최소 %{count} 글자 이상이어야 합니다."
+  text_length_between: "%{min} 에서 %{max} 글자"
+  text_tracker_no_workflow: 이 타입에는 업무흐름이 지정되지 않았습니다.
+  text_unallowed_characters: 사용할 수 없는 문자
+  text_comma_separated: 여러 값 사용가능 (',' 로 구분)
+  text_line_separated: 여러 값 사용가능 (줄 단위)
+  text_issues_ref_in_commit_messages: 커밋 메시지에서 이슈를 참조하거나 수정하기
+  text_issue_added: "%{author}님이 %{id} 이슈를 작성했습니다."
+  text_issue_updated: "%{author}님이 %{id} 이슈를 업데이트 했습니다."
+  text_wiki_destroy_confirmation: 이 위키와 모든 내용을 삭제 하시겠습니까?
+  text_issue_category_destroy_question: "이 분류에 일부 이슈들(%{count}건)이 포함되어 있습니다. 어떻게 하시겠습니까?"
+  text_issue_category_destroy_assignments: 분류 지정 삭제
+  text_issue_category_reassign_to: 이슈를 이 분류에 다시 지정하기
+  text_user_mail_option: "선택하지 않은 프로젝트에서도 모니터링 중이거나 관련되어(이슈를 작성했거나 담당) 있으면 알림을 받게 됩니다."
+  text_no_configuration_data: "아직 역할과 이슈 타입, 이슈 상태, 업무흐름이 설정되지 않았습니다.\n기본 설정을 불러오는 것을 권장합니다. 불러온 이후에는 수정할 수 있습니다."
+  text_load_default_configuration: 기본 설정을 불러오기
+  text_status_changed_by_changeset: "체인지셋 %{value} 에 의해 변경되었습니다."
+  text_time_logged_by_changeset: "체인지셋 %{value} 에 의해 기록되었습니다."
+  text_issues_destroy_confirmation: '선택한 이슈를 정말 삭제하시겠습니까?'
+  text_issues_destroy_descendants_confirmation: 하위 이슈 %{count}건도 함께 삭제됩니다.
+  text_time_entries_destroy_confirmation: 선택한 시간 기록을 정말 삭제 하시겠습니까?
+  text_select_project_modules: '이 프로젝트에서 사용할 모듈을 선택하세요:'
+  text_default_administrator_account_changed: 기본 관리자 계정의 비밀번호 변경됨
+  text_file_repository_writable: 첨부파일용 디렉토리 쓰기 권한
+  text_plugin_assets_writable: 플러그인용 디렉토리 쓰기 권한
+  text_rmagick_available: RMagick 사용 가능 (옵션)
+  text_destroy_time_entries_question: "삭제하려는 이슈에 %{hours} 시간이 기록되어 있습니다. 어떻게 하시겠습니까?"
+  text_destroy_time_entries: 기록된 시간을 삭제하기
+  text_assign_time_entries_to_project: 기록된 시간을 프로젝트에 할당하기
+  text_reassign_time_entries: '기록된 시간을 재할당하기:'
+  text_user_wrote: "%{value}님이 작성:"
+  text_enumeration_destroy_question: "%{count}건의 객체에서 이 항목을 사용하고 있습니다."
+  text_enumeration_category_reassign_to: '객체에 항목을 다시 지정:'
+  text_email_delivery_not_configured: "이메일이 설정되지 않아 사용할 수 없습니다.\nconfig/configuration.yml 에서 SMTP 서버를 설정하고 어플리케이션을 다시 시작 해야합니다."
+  text_repository_usernames_mapping: "저장소 기록에서 발견된 사용자와 Redmine 사용자를 연결합니다.\n저장소 기록에서 이름이나 메일주소가 Redmine과 같은 사용자는 자동으로 연결됩니다."
+  text_diff_truncated: '... 이 차이점은 표시 가능한 최대 줄수를 초과하여 더 이상 표시되지 않습니다.'
+  text_custom_field_possible_values_info: '각 값당 한 줄'
+  text_wiki_page_destroy_question: 이 페이지는 %{descendants}건의 하위 페이지를 포함하고 있습니다. 어떻게 하시겠습니까?
+  text_wiki_page_nullify_children: 하위 페이지를 최상위 페이지로 변경
+  text_wiki_page_destroy_children: 모든 하위 페이지도 포함하여 삭제
+  text_wiki_page_reassign_children: 하위 페이지의 상위 페이지 지정
+  text_own_membership_delete_confirmation: 권한의 일부 또는 전부를 삭제하면 더 이상 프로젝트를 수정할 수 없게 됩니다.\n계속 하시겠습니까?
+  text_zoom_in: 확대
+  text_zoom_out: 축소
+  text_warn_on_leaving_unsaved: 아직 페이지의 내용이 저장되지 않았습니다.
+  text_scm_path_encoding_note: "기본: UTF-8"
+  text_git_repository_note: '로컬 Bare 저장소 (예: /gitrepo, c:\gitrepo)'
+  text_mercurial_repository_note: '로컬 저장소 (예: /hgrepo, c:\hgrepo)'
+  text_scm_command: 명령어
+  text_scm_command_version: 버전
+  text_scm_config: SCM 명령어는 config/configuration.yml 에서 설정할 수 있습니다. 설정후에는 어플리케이션을 다시 시작 해야합니다.
+  text_scm_command_not_available: SCM 명령어를 사용할 수 없습니다. 관리자 페이지를 확인하세요.
+  text_issue_conflict_resolution_overwrite: "내 변경사항들을 무조건 적용 (이전 설명은 유지되지만 변경사항은 덮어 씌어질 수 있습니다)"
+  text_issue_conflict_resolution_add_notes: "내 변경사항들은 무효화 하고 설명만 추가"
+  text_issue_conflict_resolution_cancel: "내 수정사항을 취소하고 %{link} 다시 표시"
+  text_account_destroy_confirmation: "정말 탈퇴 하시겠습니까?\n탈퇴 후에는 계정을 다시 살릴 수 없습니다."
+  text_session_expiration_settings: "경고: 이 설정을 변경하면 현재의 세션이 만료되어 로그아웃 될 수도 있습니다."
+
+  default_role_manager: 관리
+  default_role_developer: 개발
+  default_role_reporter: 지원
+  default_tracker_bug: 버그
+  default_tracker_feature: 새 기능
+  default_tracker_support: 개선
+  default_issue_status_new: 신규
+  default_issue_status_in_progress: 진행중
+  default_issue_status_resolved: 해결
+  default_issue_status_feedback: 피드백
+  default_issue_status_closed: 닫힘
+  default_issue_status_rejected: 거절
+  default_doc_category_user: 사용자 문서
+  default_doc_category_tech: 기술 문서
+  default_priority_low: 낮음
+  default_priority_normal: 보통
+  default_priority_high: 높음
+  default_priority_urgent: 긴급
+  default_priority_immediate: 즉시
+  default_activity_design: 설계
+  default_activity_development: 개발
+
+  enumeration_issue_priorities: 이슈 우선순위
+  enumeration_doc_categories: 문서 분류
+  enumeration_activities: 활동 (시간추적용)
+  enumeration_system_activity: 시스템 활동
+  description_filter: 필터
+  description_search: 검색 항목
+  description_choose_project: 프로젝트
+  description_project_scope: 검색 범위
+  description_notes: 설명
+  description_message_content: 메시지 내용
+  description_query_sort_criteria_attribute: 정렬 항목
+  description_query_sort_criteria_direction: 정렬 순서
+  description_user_mail_notification: 알림 설정
+  description_available_columns: 가능한 항목
+  description_selected_columns: 선택한 항목
+  description_all_columns: 모든 항목
+  description_issue_category_reassign: 이슈 분류를 선택하세요
+  description_wiki_subpages_reassign: 상위 페이지를 선택하세요
+  description_date_range_list: 기간 선택
+  description_date_range_interval: 기간 지정
+  description_date_from: 시작
+  description_date_to: 종료
+  
