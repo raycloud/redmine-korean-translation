@@ -1,6 +1,3 @@
-# Korean translation by Jiwoon Kim
-#   https://github.com/raycloud/redmine-korean-translation
-# originally by Kihyun Yoon (ddumbugie@gmail.com),http://plenum.textcube.com
 ko:
   # Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: ltr
@@ -499,7 +496,7 @@ ko:
   label_issue_updated: 이슈가 업데이트됨
   label_issue_note_added: 설명이 추가됨
   label_issue_status_updated: 상태가 변경됨
-  label_issue_priority_updated: 순위가 변경됨
+  label_issue_priority_updated: 우선순위가 변경됨
   label_document: 문서
   label_document_new: 문서 작성
   label_document_plural: 문서
@@ -508,8 +505,8 @@ ko:
   label_role_plural: 역할
   label_role_new: 역할 추가
   label_role_and_permissions: 역할 및 권한
-  label_role_anonymous: 익명
-  label_role_non_member: 일반
+  label_role_anonymous: 비로그인
+  label_role_non_member: 일반 사용자
   label_member: 사용자
   label_member_new: 사용자 등록
   label_member_plural: 사용자
@@ -801,8 +798,8 @@ ko:
   label_changeset_plural: 체인지셋
   label_default_columns: 기본 항목
   label_no_change_option: (수정 안함)
-  label_bulk_edit_selected_issues: 선택한 이슈 한꺼번에 수정하기
-  label_bulk_edit_selected_time_entries: 시간 기록 한꺼번에 수정하기
+  label_bulk_edit_selected_issues: 이슈 한꺼번에 수정
+  label_bulk_edit_selected_time_entries: 시간 기록 한꺼번에 수정
   label_theme: 테마
   label_default: 기본
   label_search_titles_only: 제목에서만 찾기
@@ -915,8 +912,8 @@ ko:
   button_download: 다운로드
   button_list: 목록
   button_view: 보기
-  button_move: 이동
-  button_move_and_follow: 이동하고 따라가기
+  button_move: 옮기기
+  button_move_and_follow: 옮기고 따라가기
   button_back: 뒤로
   button_cancel: 취소
   button_activate: 활성화
@@ -963,15 +960,15 @@ ko:
   text_select_mail_notifications: 메일로 알릴 활동을 선택하세요.
   text_regexp_info: '예: ^[A-Z0-9]+$'
   text_min_max_length_info: 0은 제한없음
-  text_project_destroy_confirmation: "프로젝트와 모든 데이터를 삭제하시겠습니까?"
+  text_project_destroy_confirmation: 이 프로젝트와 모든 데이터를 삭제하시겠습니까?
   text_subprojects_destroy_warning: "(%{value}) 하위 프로젝트가 자동으로 삭제됩니다."
   text_workflow_edit: 수정하려는 업무흐름의 역할과 타입을 선택하세요
   text_are_you_sure: 계속 진행 하시겠습니까?
-  text_journal_changed: "%{label} - %{old} 에서 %{new} (으)로 변경되었습니다."
-  text_journal_changed_no_detail: "%{label} 변경됨"
-  text_journal_set_to: "%{label} - %{value} (으)로 지정되었습니다."
+  text_journal_changed: "%{label} - %{old}에서 %{new}(으)로 변경되었습니다."
+  text_journal_changed_no_detail: "%{label} - 변경됨"
+  text_journal_set_to: "%{label} - %{value}(으)로 지정되었습니다."
   text_journal_deleted: "%{label} - 삭제되었습니다. (%{old})"
-  text_journal_added: "%{label} - %{value} 이(가) 추가되었습니다."
+  text_journal_added: "%{label} - %{value}이(가) 추가되었습니다."
   text_tip_issue_begin_day: 시작한 이슈
   text_tip_issue_end_day: 마감되는 이슈
   text_tip_issue_begin_end_day: 하루 이슈
@@ -1036,7 +1033,7 @@ ko:
   text_session_expiration_settings: "경고: 이 설정을 변경하면 현재의 세션이 만료되어 로그아웃 될 수도 있습니다."
   text_project_closed: 이 프로젝트는 읽기 전용이며 닫혀 있습니다.
 
-  default_role_manager: 관리
+  default_role_manager: 관리자
   default_role_developer: 개발
   default_role_reporter: 지원
   default_tracker_bug: 버그
