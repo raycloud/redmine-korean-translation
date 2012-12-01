@@ -483,8 +483,8 @@ ko:
   label_project_plural: 프로젝트
   label_x_projects:
     zero:  프로젝트 없음
-    one:   프로젝트 한개
-    other: "프로젝트 %{count}개"
+    one:   프로젝트 1건
+    other: "프로젝트 %{count}건"
   label_project_all: 모든 프로젝트
   label_project_latest: 최근 프로젝트
   label_issue: 이슈
